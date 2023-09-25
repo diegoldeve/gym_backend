@@ -8,6 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Artes Marciales</title>
         <style>
+            body{
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-image: url('{{asset('../public/img/artes2.jpg')}}');
+            }
             main{
                 display: flex;
                 justify-content: center;
@@ -21,6 +28,9 @@
             }
             .title{
                 margin:30px 50px;
+            }
+            h2{
+                color:white;
             }
             
         </style>
