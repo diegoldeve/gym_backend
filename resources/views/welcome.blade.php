@@ -6,6 +6,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap" rel="stylesheet">
         <title>Artes Marciales</title>
         <style>
             body{
@@ -31,6 +34,14 @@
             }
             h2{
                 color:white;
+                font-family: 'Mooli', sans-serif;
+                display: inline;
+            }
+            h1{
+                font-family: 'Croissant One', cursive;
+                color:white;
+                display: inline;
+                font-size: 50px;
             }
             
         </style>
@@ -38,7 +49,7 @@
     <body>
         <main>
             <div class="title">
-                <h2>Artes Marciales</h2>
+                <h2>Artes Marciales </h2><h1>YUKETO</h1>
             </div>
             <div class="opciones">
                 <button class="btn btn-light" onclick="validarPassword()">Soy entrenador</button>

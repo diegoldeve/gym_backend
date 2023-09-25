@@ -8,6 +8,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GYM | Entrenador</title>
   <style>
+    body{
+      background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-image: url('{{asset('../public/img/artes6.jpg')}}');
+    }
     main{
         display: flex;
         justify-content: center;

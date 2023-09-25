@@ -6,8 +6,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">      
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap" rel="stylesheet">
+        
   <title>GYM | Estudiante</title>
   <style>
+    body{
+      background-size:cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-image: url('{{asset('../public/img/artes6.jpg')}}');
+    }
     main{
         display: flex;
         justify-content: center;
@@ -34,6 +45,14 @@
     }
     h1,h3{
       margin:30px;
+      font-family: 'Mooli', sans-serif;
+
+    }
+    label{
+      font-family: 'Mooli', sans-serif;
+    }
+    h2, .title{
+      font-family: 'Croissant One', cursive;
     }
     form input{
       border-radius: 10px;
@@ -47,14 +66,19 @@
       padding: 5px;
       text-align: center
     }
+    .opc{
+      display: flex;
+    }
     
 </style>
 </head>
 <body>
-  <h1>Artes Marciales</h1>
+  <h1 class="title">Artes Marciales</h1>
   <a href="{{route('welcome')}}"><button class="btn btn-warning">Regresar</button></a>
-  <h3>Ve, edita o elimina tus clases aquí!</h3>
-  <a href="{{route('alumno.irBusqueda')}}"><button class="btn btn-success">Buscar clases</button></a>
+  <div class="opc">
+    <h3>Ve, edita o elimina tus clases aquí ➡️</h3>
+    <a href="{{route('alumno.irBusqueda')}}"><button class="btn btn-success">Buscar clases</button></a>
+  </div>
   <main>
     @if (session('mensajeExito'))
       <div class="alert alert-success">
