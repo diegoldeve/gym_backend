@@ -31,10 +31,21 @@
                 <h2>Artes Marciales</h2>
             </div>
             <div class="opciones">
-                <a href="{{route('entrenador.index')}}"><button class="btn btn-light">Soy entrenador</button></a>
+                <button class="btn btn-light" onclick="validarPassword()">Soy entrenador</button>
                 <a href="{{route('alumno.index')}}"><button class='btn btn-primary'>Soy alumno</button></a>
             </div>
         </main>
     </body>
+    <script>
+        function validarPassword(){
+            let password = prompt('Ingresa la contraseña para poder ingresar');
+            console.log(password);
+            if(password === 'entrenadorarturo'){
+                window.location.href = "{{route('entrenador.index')}}"
+            }else{
+                alert('Contraseña incorrecta');
+            }
+        }
+    </script>
     </html>
 @endsection

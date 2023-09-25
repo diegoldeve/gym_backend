@@ -27,7 +27,8 @@ Route::get('/alumno.irBusqueda', [AlumnoController::class, 'irBusqueda'])->name(
 Route::get('/alumno.index', [AlumnoController::class, 'index'])->name('alumno.index');
 Route::post('/alumno.index', [AlumnoController::class, 'storage'])->name('alumno.storage');
 Route::delete('/borrar/clase/{id}', [AlumnoController::class, 'borrarClase'])->name('borrar.clase');
-
+Route::get('editar-clase/{id}', [AlumnoController::class, 'editarClase'])->name('alumno.editar');
+Route::put('/alumno/actualizar/{id}', [AlumnoController::class, 'actualizarClase'])->name('alumno.actualizar');
 //buscador
 Route::post('/alumno.buscar', [DatosController::class, 'buscarClases'])->name('buscar.clases');
 Route::get('/alumno.buscar', [DatosController::class, 'mostrarVista'])->name('buscar.formulario');

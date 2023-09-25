@@ -61,7 +61,7 @@
               <td>{{ $clase->fecha }}</td>
               <td>{{ $clase->hora }}</td>
               <td>
-                <form action="">
+                <form action="{{route('alumno.editar', ['id'=>$clase->id])}}" method="GET">
                   @csrf
                   <button style="margin:10px;" class="btn btn-warning">EDITAR</button>
                 </form>
